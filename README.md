@@ -168,5 +168,6 @@ The majority of patients had between 1 and 3 visits during the 30-day period whi
 - Current model does not rank urgency levels.  
 - Future improvements could incorporate **patient age, history, and service type** to refine urgency detection. 
 
-![Visit Duration Distribution by Keyword Flag](results/visit_duration_histograms_Keyword.png)
+<img src="results/visit_duration_histograms_Keyword.png" alt="Visit Duration Distribution by Keyword Flag" width="400"/>
+
 ---
