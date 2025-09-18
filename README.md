@@ -27,7 +27,6 @@ It stores:
 - `README.md` Project documentation
 - `requirements.txt` Required third-party package
 
----
 
 ## Installation
 
@@ -51,7 +50,6 @@ python --version
 pip install -r requirements.txt
 ```
 
----
 
 ## Dataset Overview
 
@@ -103,7 +101,7 @@ The dataset contains **970 visit records** with 13 columns:
 - Inconsistent date/time formats reinstated.  
 - Typos in `service_type` and `visit_location` corrected using regex.  
 
----
+
 
 ## Analysis Results
 
