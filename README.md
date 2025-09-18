@@ -149,9 +149,11 @@ To make the boxplot easier to interpret, we used a log scale for visit duration;
 
 The majority of patients had between 1 and 3 visits during the 30-day period while most of the nurses carried out about 10 home visits each in the last 30 days.
 
-![Visit duration histplot nurse](results/visit_duration_histplot_nurse.png)
 
-![Visit duration histplot patient](results/visit_duration_histplot_patient.png)
+<p float="left">
+  <img src="results/visit_duration_histplot_nurse.png" alt="Visit duration histplot nurse" width="400"/>
+  <img src="results/visit_duration_histplot_patient.png" alt="Visit duration histplot patient" width="400"/>
+</p>
 
 ---
 
@@ -159,11 +161,12 @@ The majority of patients had between 1 and 3 visits during the 30-day period whi
 
 - Assumed that **keywords** (e.g., “in pain”, “restless”) are generated from patient feedback.  
 - Probability of each outcome:  
-  - Urgency keyword triggered" **24%**  
+  - Urgency keyword triggered: **24%**  
   - Normal visit:**40%**  
   - Follow-up visit: **36%**  
 - Urgency visits tend to have the **shortest average duration**, followed by follow-up visits.  
 - Current model does not rank urgency levels.  
 - Future improvements could incorporate **patient age, history, and service type** to refine urgency detection. 
 
+![Visit Duration Distribution by Keyword Flag](results/visit_duration_histograms_Keyword.png)
 ---
