@@ -22,7 +22,7 @@ This project experiments with **data analysis** in Python (via Jupyter Notebooks
 It stores:
 
 - `data/` Raw CSV file (`visits.csv`)
-- `notebooks/` Jupyter notebooks with analysis and visualisation
+- `notebooks/` Jupyter notebooks: `01_create.ipynb`for generating dataset and '02_EDA.ipynb' for analysis and visualisation
 - `results/` Output charts (boxplots, histograms, etc.)
 - `README.md` Project documentation
 - `requirements.txt` Required third-party package
