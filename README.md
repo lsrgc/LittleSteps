@@ -1,9 +1,4 @@
-# LittleSteps
-
-
-
-# LittleSteps Project
-
+# LittleSteps Analysis
 
 ## Overview
 
@@ -12,18 +7,17 @@ This project experiments with **data analysis** in Python (via Jupyter Notebooks
 **Dataset size**  
 
 - Original: 1,000 rows × 8 columns  
-- After cleaning: 970 rows × 13 columns
-- Five new columns were created to:
-1. Flag missing values in nurse notes
-2. Flag missing values in visit end time
-3. Classify keywords
-4. Compute visit duration (based on start and end times)
-5. Mark `visit_end_time` outliers for quality checks 
+- After cleaning: 970 rows × 13 columns  
+- Five new columns were created to:  
+
+  1. Flag missing values in nurse notes  
+  2. Flag missing values in visit end time  
+  3. Classify keywords  
+  4. Compute visit duration (based on start and end times)  
+  5. Mark outliers in `visit_end_time` for quality checks    
 
 
 ## Repository Structure 
-
----
 
 It stores:
 
@@ -37,25 +31,21 @@ It stores:
 
 ## Installation
 
-
-### Clone the repository .  
-
-
+###  Clone the repository:
 
 ```bash
 
 git clone https://github.com/lsrgc/LittleSteps.git
-
 cd LittleSteps
 ```
 
-2. Make sure Python 3.9+ is installed:  
+### Make sure Python 3.9+ is installed:  
 
 ```bash
 python --version
 ```
 
-3. Install the required libraries:
+### Install the required libraries:
 
 ```bash
 pip install -r requirements.txt
@@ -82,8 +72,6 @@ The dataset contains **970 visit records** with 13 columns:
 | `duration_outlier`       | int32           | 970            | Flag (1/0) for unusually short (<10min) or long (>2hr) visits.               |
 | `keyword_flag`           | object          | 970            | Flagging based on presence of certain keywords (urgent, follow-up, etc.).    |
 | `visit_duration_minutes` | float64         | 875            | Calculated visit duration in minutes. Missing where `visit_end_time` is NaN. |
-
----
 
 
 ## Data Quality & Cleaning
@@ -155,9 +143,7 @@ The majority of patients had between 1 and 3 visits during the 30-day period whi
   <img src="results/visit_duration_histplot_patient.png" alt="Visit duration histplot patient" width="400"/>
 </p>
 
----
-
-## Notes on Urgency/ Follow-Up
+### Notes on Urgency/ Follow-Up
 
 - Assumed that **keywords** (e.g., “in pain”, “restless”) are generated from patient feedback.  
 - Probability of each outcome:  
@@ -170,4 +156,3 @@ The majority of patients had between 1 and 3 visits during the 30-day period whi
 
 <img src="results/visit_duration_histograms_Keyword.png" alt="Visit Duration Distribution by Keyword Flag" width="550"/>
 
----
